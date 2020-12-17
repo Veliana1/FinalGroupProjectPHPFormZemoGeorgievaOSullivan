@@ -9,10 +9,10 @@
   E-mail: <input type="text" name="email" value="<?php echo $email;?>">
   <span class="error"> <?php echo $emailErr;?></span>
   <br><br>
-  Website: <input type="text" name="website" value="<?php echo $website;?>">
+  Do you celebrate a holiday in December?:  <input type="checkbox" name='lang[]' value="YES"> YES <br/>
   <span class="error"><?php echo $websiteErr;?></span>
-  <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+  <br><br><input type="checkbox" name='lang[]' value="no"> no <br/>
+  Comment here what hoiday you celebrate: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
   <br><br>
   Gender:
   <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
